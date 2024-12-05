@@ -3,7 +3,6 @@
 ## :scroll: Overview 
 Sample description
 
-![screenshot](pics/screenshot1.png)
 ![screenshot](pics/screengif.gif)
 
 ***
