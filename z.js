@@ -15,7 +15,7 @@ const characters = {
 
 const generatePassword = () => {
     let staticPassword = "",
-        ramdomPassword = "",
+        randomPassword = "",
         excludeDuplicate = false,
         passLength = lengthSlider.value;
 
@@ -32,7 +32,7 @@ const generatePassword = () => {
     });
 
     for (let i = 0; i < passLength; i++) {
-        let ramdonChar = staticPassword[Math.floor(Math.ramdom() * staticPassword.length)];
+        let randomChar = staticPassword[Math.floor(Math.random() * staticPassword.length)];
         if (excludeDuplicate) {
             !randomPassword.includes(randomChar) || randomChar == " " ? randomPassword += randomChar : i--;
         } else {
@@ -65,4 +65,4 @@ const copyPassword = () => {
 
 copyIcon.addEventListener("click", copyPassword);
 lengthSlider.addEventListener("input", updateSlider);
-generateBtn.addEventListener("click", generatePassword);
+generateButton.addEventListener("click", generatePassword);
